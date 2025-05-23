@@ -1,0 +1,43 @@
+# WTM v0.8 Dependencies
+# World Truth Model - Building global knowledge through collaborative intelligence
+
+# Core dependencies
+click>=8.0.0
+PyYAML>=6.0
+pydantic>=1.10.0
+
+# Cryptography and blockchain
+cryptography>=3.4.8
+pycryptodome>=3.15.0
+ecdsa>=0.18.0
+
+# Networking
+aiohttp>=3.8.0
+websockets>=10.4
+
+# ML and Data Science
+numpy>=1.21.0
+pandas>=1.5.0
+scikit-learn>=1.1.0
+torch>=1.12.0
+transformers>=4.21.0
+
+# MLOps Integration
+mlflow>=2.0.0
+# zenml>=0.20.0  # Optional - uncomment if needed
+
+# Knowledge Processing
+spacy>=3.4.0
+nltk>=3.7
+textblob>=0.17.1
+
+# Database and Storage (for future enhancements)
+# sqlalchemy>=1.4.0
+# redis>=4.0.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=22.0.0
+flake8>=5.0.0
+mypy>=0.991 

@@ -1,0 +1,64 @@
+# WTM v0.8 Configuration
+# World Truth Model - Building global knowledge through collaborative intelligence
+
+# Network configuration
+network:
+  node_id: "wtm-node-1"
+  listen_port: 3006
+  bootstrap_peers:
+    - "127.0.0.1:3007"
+    - "127.0.0.1:3008"
+  max_peers: 50
+
+# Blockchain configuration  
+blockchain:
+  genesis_hash: "0x000000000000000000000000000000000000000000000000000000000000000"
+  block_time: 5  # seconds
+  max_block_size: 1000000  # bytes
+  difficulty_adjustment: 100  # blocks
+
+# MLOps configuration
+mlops:
+  max_concurrent_training: 10
+  training_timeout: 3600  # seconds
+  model_storage_path: "output/models"
+  dataset_storage_path: "output/datasets"
+
+# Consensus configuration
+consensus:
+  validator_stake_minimum: 1000  # WTM tokens
+  competition_duration: 86400  # seconds (24 hours)
+  proof_verification_timeout: 300  # seconds
+
+# World Truth Model configuration
+wtm:
+  max_entities: 10000000  # 10 million entities
+  max_facts: 100000000   # 100 million facts
+  confidence_threshold: 0.7
+  update_batch_size: 100
+  ml_integration_enabled: true
+  auto_validation_threshold: 0.8
+  knowledge_domains:
+    - science
+    - technology
+    - mathematics
+    - history
+    - geography
+    - culture
+    - economics
+    - medicine
+    - environment
+    - current_events
+
+# Logging configuration
+logging:
+  level: "INFO"
+  file: "output/wtm.log"
+  max_size: "100MB"
+  backup_count: 5
+
+# Performance tuning
+performance:
+  async_workers: 4
+  cache_size: 10000
+  index_rebuild_interval: 3600  # seconds 
