@@ -1,0 +1,44 @@
+# NockNock v0.7 Configuration
+
+# Network configuration
+network:
+  node_id: "nocknock-node-1"
+  listen_port: 3006
+  bootstrap_peers:
+    - "127.0.0.1:3007"
+    - "127.0.0.1:3008"
+  max_peers: 50
+
+# Blockchain configuration  
+blockchain:
+  genesis_hash: "0x000000000000000000000000000000000000000000000000000000000000000"
+  block_time: 5  # seconds
+  max_block_size: 1000000  # bytes
+  difficulty_adjustment: 100  # blocks
+
+# MLOps configuration
+mlops:
+  max_concurrent_training: 10
+  training_timeout: 3600  # seconds
+  model_storage_path: "output/models"
+  dataset_storage_path: "output/datasets"
+
+# Consensus configuration
+consensus:
+  validator_stake_minimum: 1000  # NOCK tokens
+  competition_duration: 86400  # seconds (24 hours)
+  proof_verification_timeout: 300  # seconds
+
+# World Truth Model configuration
+wtm:
+  max_entities: 1000000
+  max_facts: 10000000
+  confidence_threshold: 0.7
+  update_batch_size: 100
+
+# Logging configuration
+logging:
+  level: "INFO"
+  file: "output/nocknock.log"
+  max_size: "100MB"
+  backup_count: 5 
